@@ -62,7 +62,7 @@ class Test{
 Question 6: Wich of the following are legal declaration and definition of a method. Select all correct answers.
 
 a. void method (){}      // Everything ok. This is correct answer. Access modifier - private package, method does not return value
-                         // Don't have any formal parameters
+                         // Doesn't have any formal parameters
 					
 b. void method(void){}
 c. method (){}           // It looks like a default constructor
