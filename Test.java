@@ -1,13 +1,14 @@
 Question 1: Which method can access to private attributes of class ?
 
-(C) Only methods those defined in the same class  // private is the most strict access modifier. Private  member can only be accesed from their own class 
-												  //You can get private variables using special method - Getter
+(C) Only methods those defined in the same class  // private is the most strict access modifier. 
+                                                  // Private  member can only be accesed from their own class
+                                                  //You can get private variables using special method - Getter
 												  
                                                   // For Example:		
 												  
-												      public int getVariable(){
-													  return this.variable;
-												  }
+		                                  public int getVariable(){
+						  return this.variable;
+						  }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -61,7 +62,7 @@ class Test{
 Question 6: Wich of the following are legal declaration and definition of a method. Select all correct answers.
 
 a. void method (){}      // Everything ok. This is correct answer. Access modifier - private package, method does not return value
-                         // Don't have any  formal parameters
+                         // Don't have any formal parameters
 					
 b. void method(void){}
 c. method (){}           // It looks like a default constructor
@@ -78,7 +79,7 @@ Question 7: What happened when the following code is compiled and run. Select th
 for (int i = 1; i < 3; i++)
 	for (int j = 3; j >= 1; j--) // j >= 1 || i = 1, variables i and j will be equal.
 		
-assert i != j : i;	// we need to add -ea and, also, "i" can not be void
+assert i != j : i;	// we need to add -ea. Also, "i" can not be void
 	
 Correct answer : (B) The number 1 gets printed with AssertionError
 	
@@ -89,7 +90,7 @@ Question 8: A top level class may have only the following access modifier. Selec
 
 Correct answer : (D) public 
 
-// I think we can compile, also with private package modifier... gm... something strange...
+// I think we can compile, with private package modifier... gm... something strange...
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -152,7 +153,7 @@ for (int i = 1; i < 4; i++)
 	if(i < j)
 		assert i != j : i;
 	
-	// AssertionError and i will not be printed because i != j will return true
+	// "AssertionError" and "i" will not be printed because i != j will return true
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -182,7 +183,7 @@ public class ShortCkt{
 	}
 }
 
-Correct answer : C(3);  // Must be "3" ... but I'm not sure ...
+Correct answer : C(3);  // Must be "3" ... but, I'm not sure ...
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -193,8 +194,8 @@ class test{
 		
 		int i,j,k,l = 0;
 		k = l++; // 0 - because of postfix increment
-        j = ++k; // 1 - because of prefix increment
-        i = j++; // 1 - because of postfix increment
+                j = ++k; // 1 - because of prefix increment
+                i = j++; // 1 - because of postfix increment
 		
 		sout(i)
 	}
@@ -204,7 +205,8 @@ Correct answer : (B) 1;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Question 15: Write down the modifier of a method that makes the method available to all classes in the same package and to all the subclasses of this class
+Question 15: Write down the modifier of a method that makes the method available to all classes in the same package 
+and to all the subclasses of this class
 
 
 Correct answer : private package
