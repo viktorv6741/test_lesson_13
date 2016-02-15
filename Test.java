@@ -1,6 +1,6 @@
 Question 1: Which method can access to private attributes of class ?
 
-(C) Only methods those defined in the same class  // private is the most strict access modifier. 
+(C) Only methods those defined in the same class  // private is the strictest access modifier. 
                                                   // Private  member can only be accesed from their own class
                                                   //You can get private variables using special method - Getter
 												  
